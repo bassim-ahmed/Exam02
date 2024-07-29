@@ -66,7 +66,7 @@ namespace Exam02
                     case McqQuestion:
                         do
                         {
-                            Console.WriteLine("Please Enter The Answer Id");
+                            Console.WriteLine("Please Enter The Answer NUMBER");
                             Flag = int.TryParse(Console.ReadLine(), out userAnswerId);
 
                         } while (!Flag && (userAnswerId == 1 || userAnswerId == 2 || userAnswerId == 3));
@@ -74,7 +74,7 @@ namespace Exam02
                     default:
                         do
                         {
-                            Console.WriteLine("Please Enter The Answer Id (1 For True | 2 For False)");
+                            Console.WriteLine("Please Enter The Answer number (1 For True | 2 For False)");
                             Flag = int.TryParse(Console.ReadLine(), out userAnswerId);
                         } while (!Flag && (userAnswerId == 1 || userAnswerId == 2));
                         break;
